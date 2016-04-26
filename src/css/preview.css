@@ -1,0 +1,47 @@
+@charset "utf-8"
+body{background-color: #78e2e8;}
+.limit{
+	text-align: center;
+	font-size: 20px;
+	color: #f97885;
+}
+.container{
+	width: 81vw;
+	height: auto;
+	padding:20px 6%;
+	margin: 20px auto;
+	background: #fff;
+	border-radius: 3px;
+	border:1px solid #00b2a9;
+	max-width: 320px;
+}
+/*预览*/
+.preview-box{
+	width: 100%;
+	height: auto;
+}
+.preview{
+	display: block;
+	width: 81%;
+	padding-bottom: 81%;
+	margin: 30px auto;
+	background: url(../img/preview-btn.png) center no-repeat;
+	background-size: 100% 100%;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.preview-input{
+	width: 0px;
+	height: 0px;
+}
+.btn{
+	display: block;
+	width: 70%;
+	color: #fff;
+	height: 40px;
+	line-height: 40px;
+	background: #f97885;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 5px;
+}

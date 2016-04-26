@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <title>图片上传预览</title>
+    <meta name="author" content="m.test.superburse.com.cn">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="m.test.superburse.com.cn">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="../css/common.css" media="screen" rel="stylesheet" type="text/css" />
+	  <link href="../css/preview.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- 内容区域 -->
+    <div class="container">
+        <p class="limit" id="limit">请上传照片</p>
+        <div class="preview-box">
+            <label class="preview" id="preview-area" for="preview-input">&nbsp;</label>
+            <input type="file" class="preview-input" id="preview-input" accept="image/gif, image/jpeg, image/jpg, image/png" />			
+        </div>
+    <input type="button" class="btn" id="btn" value="点我控制台输出图片信息" />
+</body>
+<script src="./src/js/preview-mini.js"></script>
+<script>
+
+    document.getElementById("preview-input").onchange = function(){
+        previewMini("preview-area","preview-input")
+    }
+    document.getElementById("btn").onclick = function(){
+      // 此处sessionStorage的key值是dataBox拼接当前file输入框的index值
+       console.log(window.sessionStorage.getItem("dataBox0"))
+    }
+    // 如果仅仅是移动端使用，此处获取window.sessionStorage并上传即可，如需考虑PC端，ie9及以下请先将window.sessionStorage转换为json格式然后上传
+</script>
+</html>

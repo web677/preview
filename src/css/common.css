@@ -1,0 +1,25 @@
+ ::-webkit-scrollbar{width:0px;border:solid 0px rgba(0,0,0,0);}
+ ::-webkit-input-placeholder{font-size: 12px;}
+*{
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-tap-highlight-color: transparent;
+-webkit-appearance: none;
+outline: none;padding: 0;margin: 0;border: 0 none;}
+.disabled, [disabled]{opacity:1;}
+html{height: 100%;}
+body{width: 100%;height:100%;overflow-x: hidden;font-family: "Microsoft YaHei";font-size: 15px;background-color: #78e2e8;}
+a:link,a:hover,a:visited{text-decoration: none;color:#000;}
+li{list-style: none;}
+button,textarea,input,select{font-family: "Microsoft YaHei";font-size: 15px;}
+.clear{clear: both;}
+.hr{width: 100%;height: 0px;}
+/*信息样式*/
+.header{width: 100%;height: 28px;background:rgba(0,0,0,0.6);position: fixed;top: 0;}
+.voice_logo{margin-left: 6%;position: relative;top: -3px;}
+.scroll_list{margin-left: 10%;}
+ul.ulmar {width: auto;margin-top: 1px;height: 22px;overflow: visible;color: #fff;white-space:nowrap;}
+ul.ulmar li {margin-top: 0px;display: inline-block;margin-right: 20px;height: 24px;line-height: 24px;font-size: 12px;white-space:nowrap;}
+.top_bg{width: 100%;height: auto;}
+
+/*遮罩样式*/
+.com_pop{width: 100%;height: 100%;background: rgba(0,0,0,0.6);position: fixed;top: 0px;left: 0px;z-index: 998;display: none;}
