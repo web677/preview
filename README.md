@@ -1,7 +1,7 @@
 
 ##preview实现了什么功能?
 图片预览、压缩、存储
-####演示地址：[demo(http://web677.com/test677/html/preview.html)](http://web677.com/test677/html/preview.html)
+######演示地址：[Demo(http://web677.com/test677/html/preview.html)](http://web677.com/test677/html/preview.html)
 ##preview实现思路
 * 获取图片路径
     * 非ie9-浏览器使用[URL.createObjectURL()](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL)获取file中图片路径
