@@ -1,16 +1,16 @@
 
-#preview实现了什么功能?
+##preview实现了什么功能?
 图片预览、压缩、存储
 
 ##preview实现思路
 
-* #####获取图片路径
-    *  ######非ie9-浏览器使用[URL.createObjectURL()](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL)获取file中图片路径
-    *  ######ie9-浏览器通过获取file中value值获取图片路径
-* #####将获取到的路径设置为img的src中或者是background-image的url中
-* #####利用canvas的[drawimage()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage)方法，将图片重新绘制进canvas画布中
-* #####使用canvas的[toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)方法将画布导出，生成base64位图片格式并进行压缩
-* #####将生成的base64位格式数据存入本地存储sessionStorage中，提交时获取并上传
+* 获取图片路径
+    * 非ie9-浏览器使用[URL.createObjectURL()](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL)获取file中图片路径
+    * ie9-浏览器通过获取file中value值获取图片路径
+* 将获取到的路径设置为img的src中或者是background-image的url中
+* 利用canvas的[drawimage()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage)方法，将图片重新绘制进canvas画布中
+* 使用canvas的[toDataURL()](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL)方法将画布导出，生成base64位图片格式并进行压缩
+* 将生成的base64位格式数据存入本地存储sessionStorage中，提交时获取并上传
 
 ##参数说明
 ###previewMini(previewid,inputid,options);
