@@ -25,7 +25,7 @@
 
 ##兼容性
 
-图片预览：FF/Chrome/safari/O/ie7+
+图片预览：FF/Chrome/safari/O/ie6+
 
 图片压缩：FF/Chrome/safari/O/ie9+
 
