@@ -44,4 +44,5 @@ body{background-color: #78e2e8;}
 	text-align: center;
 	margin: 0 auto;
 	border-radius: 5px;
+	cursor: pointer;
 }
