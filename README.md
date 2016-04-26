@@ -1,2 +1,7 @@
 # preview
 图片预览压缩上传
+基本实现思路：
+1、获取图片路径并作为img的src的路径或者传给background-img的url
+2、利用canvas的drawimage()方法，将获取的图片重新绘制到canvas中
+3、利用toDataURL方法，将绘制的canvas画布导出为base64位图片格式，并进行压缩
+4、将生成的base64位格式数据存入sessionStorage，在提交时获取对应的值并上传
